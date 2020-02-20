@@ -19,6 +19,17 @@ INSERT INTO Courses (VALUES ('Starter', 'Minestrone'), ('Main', 'Pepperoni Pizza
 
 INSERT INTO Dish_types (VALUES ('Soup', 'Minestrone'), ('Pizza', 'Pepperoni Pizza'), ('Ice-cream', 'Pistachio Gelato'),('Wine', 'Pinot Grigio'), ('Extra','Garlic Bread'));
 
-SELECT * FROM Dishes;
-SELECT * FROM Courses;
+-- Query for all Dish_types
 SELECT * FROM Dish_types;
+
+-- Query for all Courses
+SELECT * FROM Courses;
+
+-- Query for all Dishes
+SELECT * FROM Dishes;
+
+-- Query for all Dishes for a certain course
+SELECT * FROM Dishes WHERE Course='Starter';
+
+-- Query for all Dishes of a certain Dish_type 
+SELECT * FROM Dish_types WHERE Dish_type='Pizza';
